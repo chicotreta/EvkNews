@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>EVK News</title>
+
+  <!-- Consent (se existir) -->
+  <script src="./consent.js"></script>
+
+  <link rel="canonical" href="https://evokale.com/news/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "EVK News",
+    "url": "https://evokale.com/news/",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="EVK News RSS" href="./rss.xml">
+
+  <link rel="icon" type="image/png" href="evknews.png">
+  <link rel="shortcut icon" type="image/png" href="evknews.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="evknews.png">
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app">
+
+    <!-- OFFLINE BANNER -->
+    <div id="offlineBanner" style="
+      display:none; position:fixed; top:10px; left:50%; transform:translateX(-50%);
+      z-index:9999; padding:8px 12px; border-radius:999px;
+      background:rgba(180,40,40,.9); color:#fff; font:600 12px system-ui;
+      border:1px solid rgba(255,255,255,.15);">
+      Offline
+    </div>
+
+    <!-- UPDATE BAR -->
+    <div id="updateBar" style="
+      display:none; position:fixed; bottom:86px; left:12px; right:12px;
+      z-index:9999; padding:10px 12px; border-radius:14px;
+      background:rgba(20,20,30,.95); color:#fff; border:1px solid rgba(255,255,255,.12);
+      font:600 13px system-ui;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+        <div>
+          Atualização disponível
+          <div style="opacity:.75; font-weight:500; font-size:12px;">Aplicar agora?</div>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <button id="btnUpdateLater" style="
+            border:1px solid rgba(255,255,255,.18); background:transparent; color:#fff;
+            padding:8px 10px; border-radius:12px; font:600 13px system-ui;">
+            Depois
+          </button>
+          <button id="btnUpdateNow" style="
+            border:1px solid rgba(255,255,255,.18); background:#2a7; color:#000;
+            padding:8px 10px; border-radius:12px; font:800 13px system-ui;">
+            Atualizar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="appToast" style="
+      opacity:0; transition:opacity .2s ease;
+      position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+      z-index:9999; padding:10px 12px; border-radius:999px;
+      background:rgba(0,0,0,.75); color:#fff; font:600 12px system-ui;
+      border:1px solid rgba(255,255,255,.12);">
+      —
+    </div>
+
+    <!-- Swiper vertical -->
+    <div class="swiper" id="newsSwiper" aria-label="Feed de notícias">
+      <header class="fixedTop" aria-label="Topo fixo">
+        <div class="brand">
+          <div class="brand__badge">
+            <!-- Use PNG por enquanto (SVG pode falhar por MIME/caching no hosting) -->
+            <img src="evknews.svg" alt="EVK News">
+          </div>
+        </div>
+
+        <div></div>
+
+        <button class="action" data-action="shareFixed" aria-label="Compartilhar">
+          <span class="material-symbols-outlined" aria-hidden="true">share</span>
+        </button>
+      </header>
+
+      <div class="swiper-wrapper" id="slides"></div>
+
+      <!-- Paginação -->
+      <div class="swiper-pagination" id="topProgress"></div>
+    </div>
+
+    <!-- Swipe hint -->
+    <div class="swipeHint" id="swipeHint" aria-hidden="true">
+      <span class="material-symbols-outlined swipeHint__arrow">swipe_vertical</span>
+      <span class="swipeHint__text">Deslize</span>
+    </div>
+
+    <!-- Barra inferior "Tópicos" -->
+    <section class="topics" aria-label="Tópicos">
+      <div class="topics__title">Tópicos</div>
+      <div class="topics__chips" id="topicChips"></div>
+    </section>
+
+    <!-- FAB 1: Detalhes (já usado pelo app.js) -->
+    <button class="fab" id="fabMenu" aria-label="Abrir detalhes" title="Detalhes">
+      Detalhes...
+    </button>
+
+    <!-- Bottom sheet (detalhes da notícia) -->
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="sheet__backdrop" id="sheetBackdrop"></div>
+      <div class="sheet__panel">
+        <div class="sheet__handle"></div>
+        <div class="sheet__content">
+          <div class="sheet__meta" id="sheetMeta"></div>
+          <h2 class="sheet__title" id="sheetTitle"></h2>
+          <p class="sheet__desc" id="sheetDesc"></p>
+
+          <div class="sheet__actions">
+            <a class="btn primary" id="sheetOpen" target="_blank" rel="noopener">Abrir fonte</a>
+            <button class="btn" id="sheetClose">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Banner (se você usa consent.js, ele controla isso) -->
+    <div id="cookieBanner" style="
+      display:none;
+      position:fixed;
+      left:12px; right:12px;
+      bottom:12px;
+      z-index:99999;
+      background:rgba(20,20,30,.96);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:16px;
+      padding:12px;
+      font:600 13px system-ui;">
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <div>
+          <div style="font-weight:900;">Medição de uso (Analytics)</div>
+          <div style="opacity:.85; font-weight:500; line-height:1.35;">
+            Usamos Google Analytics para melhorar o app.
+            <a href="./privacy.html" style="color:#fff; text-decoration:underline;">Privacidade</a>
+          </div>
+        </div>
+
+        <div id="cookieDetails" style="display:none; opacity:.85; font-weight:500; line-height:1.35;">
+          Coletamos eventos de navegação (ex.: abrir notícia, trocar slide) e dados técnicos do navegador/dispositivo.
+          Links abrem sites de terceiros.
+        </div>
+
+        <div style="display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap;">
+          <button id="btnSettings" style="
+            border:1px solid rgba(255,255,255,.18);
+            background:transparent; color:#fff;
+            padding:10px 12px; border-radius:12px; font:700 13px system-ui;">
+            Detalhes
+          </button>
+          <button id="btnReject" style="
+            border:1px solid rgba(255,255,255,.18);
+            background:rgba(255,255,255,.08); color:#fff;
+            padding:10px 12px; border-radius:12px; font:800 13px system-ui;">
+            Recusar
+          </button>
+          <button id="btnAccept" style="
+            border:1px solid rgba(255,255,255,.18);
+            background:#2a7; color:#000;
+            padding:10px 12px; border-radius:12px; font:900 13px system-ui;">
+            Aceitar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAB 2: Menu (inferior direita) -->
+    <button class="fabMenuBtn" id="fabMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="fabMenuSheet">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+
+    <!-- Sheet do menu -->
+    <div class="fabMenuSheet" id="fabMenuSheet" aria-hidden="true">
+      <div class="fabMenuBackdrop" id="fabMenuBackdrop"></div>
+
+      <div class="fabMenuPanel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="fabMenuHeader">
+          <div class="fabMenuTitle">Menu</div>
+          <button class="fabMenuClose" id="fabMenuClose" aria-label="Fechar menu">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+
+        <div class="fabMenuList">
+          <a class="fabMenuItem" href="./rss.xml" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">rss_feed</span>
+            <span>RSS (rss.xml)</span>
+          </a>
+
+          <a class="fabMenuItem" href="./feed.xml" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">rss_feed</span>
+            <span>RSS (feed.xml)</span>
+          </a>
+
+          <a class="fabMenuItem" href="./privacy.html" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">policy</span>
+            <span>Privacy</span>
+          </a>
+
+          <a class="fabMenuItem"
+             href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fevokale.com%2Fnews%2Ffeed.xml"
+             target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+            <span>Validar RSS (W3C)</span>
+          </a>
+
+          <!-- Selo com imagem (link corrigido) -->
+          <a class="fabMenuBadge"
+             href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fevokale.com%2Fnews%2Ffeed.xml"
+             target="_blank" rel="noopener">
+            <img src="valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ORDEM CORRETA: primeiro Swiper JS, depois app.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- app.js -->
+  <script src="app.js" defer></script>
+
+  <!-- Script do menu (pode ficar aqui embaixo; não interfere no app.js) -->
+  <script>
+  (() => {
+    const btn = document.getElementById("fabMenuBtn");
+    const sheet = document.getElementById("fabMenuSheet");
+    const backdrop = document.getElementById("fabMenuBackdrop");
+    const close = document.getElementById("fabMenuClose");
+
+    if (!btn || !sheet || !backdrop || !close) return;
+
+    function openMenu() {
+      sheet.setAttribute("aria-hidden", "false");
+      btn.setAttribute("aria-expanded", "true");
+    }
+    function closeMenu() {
+      sheet.setAttribute("aria-hidden", "true");
+      btn.setAttribute("aria-expanded", "false");
+    }
+
+    btn.addEventListener("click", () => {
+      const hidden = sheet.getAttribute("aria-hidden") !== "false";
+      hidden ? openMenu() : closeMenu();
+    });
+
+    close.addEventListener("click", closeMenu);
+    backdrop.addEventListener("click", closeMenu);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  })();
+  </script>
+
+</body>
+</html>

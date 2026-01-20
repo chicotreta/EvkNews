@@ -1,0 +1,284 @@
+[
+  {
+    "id": "who-2026-01-13-health-taxes-sugary-drinks-alcohol",
+    "source": "World Health Organization (WHO)",
+    "title": "OMS recomenda que governos reforcem os impostos sobre bebidas açucaradas e álcool",
+    "desc": "A OMS alerta que bebidas açucaradas e álcool estão ficando relativamente mais baratos em muitos países, impulsionando obesidade, diabetes, doenças cardiovasculares, cânceres e lesões. O órgão pede aumento e melhor desenho de impostos de saúde para reduzir consumo e gerar receita.",
+    "image": "https://images.pexels.com/photos/5751218/pexels-photo-5751218.jpeg",
+    "credit": "Pexels",
+    "tags": ["Saúde Pública", "Política de Saúde", "Doenças Crônicas", "Obesidade", "Diabetes"],
+    "url": "https://www.who.int/news/item/13-01-2026-cheaper-drinks-will-see-a-rise-in-noncommunicable-diseases-and-injuries"
+  },
+  {
+    "id": "deck-icu-classics-000",
+    "source": "EVK News • Sequência",
+    "title": "5 artigos mais impactantes da história da Medicina Intensiva",
+    "desc": "Sequência em 5 slides com artigos clássicos que mudaram condutas em UTI: ventilação protetora (ARDSNet), prona (PROSEVA), ressuscitação guiada por metas na sepse (Rivers), fluido albumina vs salina (SAFE) e controle glicêmico intensivo (Van den Berghe). Cada slide contém link direto e imagem livre (Wikimedia).",
+    "image": "https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg",
+    "credit": "Wikimedia Commons",
+    "tags": ["Medicina Intensiva", "UTI", "Artigos Clássicos", "Evidência", "Deck"],
+    "url": "https://www.nejm.org/"
+  },
+  {
+    "id": "icu-2000-arma-low-tidal-volume",
+    "source": "The ARDS Network • NEJM (2000)",
+    "title": "Ventilation with Lower Tidal Volumes vs Traditional Tidal Volumes in ALI/ARDS (ARMA)",
+    "desc": "Ensaio multicêntrico que consolidou ventilação protetora (baixo volume corrente) como padrão em lesão pulmonar aguda/SDRA, reduzindo mortalidade e tempo de ventilação.",
+    "image": "./bird.jpg",
+    "img_credit": "Medical ventilator Bird Mark 8, por Stefan Bellini, via Wikimedia Commons. Licença CC0 1.0.",
+    "credit": "Wikimedia Commons",
+    "tags": ["ARDS", "Ventilação Mecânica", "Ventilação Protetora", "UTI", "NEJM"],
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJM200005043421801"
+  },
+  {
+    "id": "icu-2013-proseva-prone-ards",
+    "source": "PROSEVA Study Group • NEJM (2013)",
+    "title": "Prone Positioning in Severe ARDS (PROSEVA)",
+    "desc": "Demonstrou redução significativa de mortalidade com prona prolongada e precoce em SDRA grave, estabelecendo a prona como intervenção-chave.",
+    "image": "./prone.jpeg",
+    "credit": "Wikimedia Commons",
+    "tags": ["ARDS", "Prona", "Ventilação Mecânica", "UTI", "NEJM"],
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1214103"
+  },
+  {
+    "id": "icu-2001-rivers-egdt-sepsis",
+    "source": "Rivers et al. • NEJM (2001)",
+    "title": "Early Goal-Directed Therapy in Severe Sepsis and Septic Shock",
+    "desc": "Popularizou a ressuscitação precoce guiada por metas na sepse/choque séptico e moldou protocolos e bundles por anos (mesmo com revisões posteriores).",
+    "image": "https://images.pexels.com/photos/3786210/pexels-photo-3786210.jpeg",
+    "credit": "Wikimedia Commons",
+    "tags": ["Sepse", "Choque Séptico", "Hemodinâmica", "Protocolos", "NEJM"],
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa010307"
+  },
+  {
+    "id": "icu-2004-safe-albumin-saline",
+    "source": "SAFE Study Investigators • NEJM (2004)",
+    "title": "A Comparison of Albumin and Saline for Fluid Resuscitation in the ICU (SAFE)",
+    "desc": "Grande RCT que comparou albumina 4% vs soro fisiológico na ressuscitação em UTI e mostrou desfechos globais semelhantes, influenciando escolhas de fluido e debates de subgrupos.",
+    "image": "https://images.pexels.com/photos/6191530/pexels-photo-6191530.jpeg",
+    "credit": "Wikimedia Commons",
+    "tags": ["Fluidos", "Albumina", "Salina", "Ressuscitação", "NEJM"],
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa040232"
+  },
+  {
+    "id": "icu-2001-van-den-berghe-intensive-insulin",
+    "source": "Van den Berghe et al. • NEJM (2001)",
+    "title": "Intensive Insulin Therapy in Critically Ill Patients",
+    "desc": "Estudo marcante sobre controle glicêmico intensivo em pacientes críticos (SICU), que impulsionou práticas de controle glicêmico na UTI e abriu o debate sobre risco de hipoglicemia e alvos ideais.",
+    "image": "https://images.pexels.com/photos/8965151/pexels-photo-8965151.jpeg",
+    "credit": "Wikimedia Commons",
+    "tags": ["Glicemia", "Insulina", "Terapia Intensiva", "Segurança", "NEJM"],
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa011300"
+  },
+  {
+    "id": "cdc-2026-01-05-immunization-schedule-update",
+    "source": "CDC (United States)",
+    "title": "CDC (Centers for Disease Control and Prevention) toma medidas para atualizar o calendário de imunização infantil.",
+    "desc": "O CDC comunica ações para atualização do calendário de imunização infantil, citando avaliação técnica e diretrizes federais. Impacta recomendações e comunicação clínica em vacinação pediátrica.",
+    "image": "https://images.pexels.com/photos/5863332/pexels-photo-5863332.jpeg",
+    "credit": "Pexels",
+    "tags": ["Vacinação", "Pediatria", "Diretrizes", "Saúde Pública"],
+    "url": "https://www.cdc.gov/media/releases/2026/2026-cdc-acts-on-presidential-memorandum-to-update-childhood-immunization-schedule.html"
+  },
+  {
+    "id": "nih-2026-01-07-mitochondria-transfer-neuropathy",
+    "source": "NIH (United States)",
+    "title": "Estudos apontam que a transferência de mitocôndrias saudáveis pode ajudar a proteger os nervos em casos de neuropatia causada pelo diabetes ou pelo tratamento com quimioterapia",
+    "desc": "O NIH reporta pesquisa indicando que a transferência de mitocôndrias de células de suporte para neurônios pode reduzir degeneração e dor em modelos de neuropatia diabética ou associada à quimioterapia, sugerindo caminho terapêutico.",
+    "image": "./mitoc.png",
+    "credit": "Pexels",
+    "tags": ["Neurologia", "Dor", "Diabetes", "Oncologia", "Pesquisa"],
+    "url": "https://www.nih.gov/news-events/news-releases/fresh-energy-supply-may-shield-nerves-diabetic-or-chemo-induced-neuropathy"
+  },
+  {
+    "id": "fda-2026-01-12-menkes-first-treatment",
+    "source": "FDA (United States)",
+    "title": "FDA aprova o primeiro tratamento para crianças com a doença de Menkes.",
+    "desc": "O FDA anuncia a aprovação do primeiro tratamento para Doença de Menkes em pacientes pediátricos (doença rara), marco regulatório relevante para genética clínica e terapias em doenças raras.",
+    "image": "https://images.pexels.com/photos/3771512/pexels-photo-3771512.jpeg",
+    "credit": "Pexels",
+    "tags": ["Pediatria", "Doenças Raras", "Genética", "Regulação"],
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-children-menkes-disease"
+  },
+  {
+    "id": "cdc-2026-01-14-salmonella-supplement-outbreak",
+    "source": "CDC (United States)",
+    "title": "Suplemento em pó associado a surto de Salmonella; CDC emite orientação.",
+    "desc": "O CDC descreve surto de Salmonella associado a pó de suplemento “greens”, com recomendações para consumidores e informações sobre recall voluntário informado à FDA. Relevante para infectologia e vigilância sanitária.",
+    "image": "./sgs.jpeg",
+    "credit": "Pexels",
+    "tags": ["Infectologia", "Surto", "Segurança Alimentar", "Saúde Pública", "Vigilância"],
+    "url": "https://www.cdc.gov/media/releases/2026/2026-live-it-up-super-greens-supplement-powders-linked-to-new-salmonella-outbreak.html"
+  },
+  {
+    "id": "ms-2025-12-dengue-butantan-sus",
+    "source": "Ministério da Saúde (gov.br)",
+    "title": "Vacina 100% nacional contra a dengue começa a chegar ao SUS com compra das primeiras 3,9 milhões de doses",
+    "desc": "Contrato do Ministério da Saúde para aquisição inicial de 3,9 milhões de doses da vacina do Butantan. O governo afirma que será um imunizante de dose única e que a oferta pelo SUS começa a partir de 2026.",
+    "image": "https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg",
+    "credit": "Pexels",
+    "tags": ["Vacinação", "Dengue", "Saúde Pública", "SUS", "Butantan"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2025/dezembro/vacina-100-nacional-contra-a-dengue-comeca-a-chegar-ao-sus-com-compra-das-primeiras-3-9-milhoes-de-doses"
+  },
+  {
+    "id": "anvisa-2025-11-dengue-butantan-registro",
+    "source": "Anvisa (gov.br)",
+    "title": "Anvisa conclui análise e assina compromisso com Butantan para registro de vacina contra a dengue",
+    "desc": "A Anvisa informa a conclusão da análise e aponta que a vacina é tetravalente e de dose única, com proteção contra os quatro sorotipos, dentro do processo de registro e compromissos regulatórios.",
+    "image": "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg",
+    "credit": "Pexels",
+    "tags": ["Anvisa", "Vacinação", "Dengue", "Regulação", "Saúde Pública"],
+    "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-conclui-analise-e-assina-compromisso-com-butantan-para-registro-de-vacina-contra-a-dengue"
+  },
+  {
+    "id": "butantan-2025-12-entrega-dengue-pni",
+    "source": "Instituto Butantan",
+    "title": "Instituto Butantan dará início à entrega de 1,3 milhão de doses da vacina contra a dengue ao Ministério da Saúde",
+    "desc": "O Butantan comunica o início da entrega de doses ao PNI e reforça que a Butantan-DV é uma vacina de dose única contra a dengue, com cronograma de entregas inicial.",
+    "image": "https://images.pexels.com/photos/5863395/pexels-photo-5863395.jpeg",
+    "credit": "Pexels",
+    "tags": ["Butantan", "Dengue", "Vacinação", "PNI", "SUS"],
+    "url": "https://butantan.gov.br/noticias/instituto-butantan-dara-inicio-a-entrega-de-13-milhao-de-doses-da-vacina-contra-a-dengue-ao-ministerio-da-saude"
+  },
+  {
+    "id": "radboud-2025-ai-mini-camera-recurrence-mi",
+    "source": "Radboudumc",
+    "title": "Combinação de mini-câmera e IA prevê novo ataque cardíaco com precisão",
+    "desc": "Notícia do Radboudumc sobre estudo em que imagens intra-coronárias (mini-câmera) associadas a IA identificam pontos vulneráveis e ajudam a prever risco de infarto recorrente.",
+    "image": "https://images.pexels.com/photos/3279197/pexels-photo-3279197.jpeg",
+    "credit": "Pexels",
+    "tags": ["Cardiologia", "IA", "Tecnologia", "Pesquisa", "Infarto"],
+    "url": "https://www.radboudumc.nl/en/news-items/2025/combination-of-mini-camera-and-ai-predicts-recurrent-heart-attack"
+  },
+  {
+    "id": "usp-2025-demografia-medica-sp",
+    "source": "Jornal da USP",
+    "title": "Médicas são maioria em SP, mas homens ainda dominam especialidades",
+    "desc": "Matéria sobre projeções e distribuição do trabalho médico e recortes por gênero em especialidades, com números e cenário projetado para os próximos anos.",
+    "image": "https://images.pexels.com/photos/3873193/pexels-photo-3873193.jpeg",
+    "credit": "Pexels",
+    "tags": ["Demografia Médica", "Brasil", "Saúde Pública", "Trabalho Médico"],
+    "url": "https://jornal.usp.br/ciencias/medicas-sao-maioria-em-sp-mas-homens-ainda-dominam-especialidades/"
+  },
+  {
+    "id": "bvsms-2025-demografia-medica-brasil-pdf",
+    "source": "Biblioteca Virtual em Saúde (BVS/MS)",
+    "title": "Demografia Médica no Brasil 2025 (relatório em PDF)",
+    "desc": "Relatório oficial com contagem, perfis e distribuição de médicos por especialidade e região no Brasil, usado como referência para discussão de oferta, concentração e planejamento.",
+    "image": "https://images.pexels.com/photos/6129688/pexels-photo-6129688.jpeg",
+    "credit": "Pexels",
+    "tags": ["Demografia Médica", "Brasil", "Planejamento", "Saúde Pública", "Relatório"],
+    "url": "https://bvsms.saude.gov.br/bvs/publicacoes/demografia_medica_brasil_2025.pdf"
+  },
+  {
+    "id": "bayer-2025-elinzanetant-fda",
+    "source": "Bayer",
+    "title": "FDA aprova Lynkuet (elinzanetant), medicamento não-hormonal para sintomas vasomotores da menopausa",
+    "desc": "Comunicado corporativo sobre a aprovação do elinzanetant para fogachos/sudorese noturna, destacando mecanismo por antagonismo de receptores neurocinina e dados clínicos.",
+    "image": "https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg",
+    "credit": "Pexels",
+    "tags": ["Saúde da Mulher", "Menopausa", "Farmacologia", "Não-hormonal"],
+    "url": "https://www.bayer.com/en/us/news-stories/lynkuet"
+  },
+  {
+    "id": "ms-2026-01-05-polilaminina",
+    "source": "Ministério da Saúde (Brasil)",
+    "title": "Ministério da Saúde e Anvisa anunciam aprovação de estudo clínico para tratamento inovador de lesões na medula espinhal",
+    "desc": "Ação anuncia estudo clínico de fase 1 com polilaminina para trauma raquimedular agudo, com participação de Anvisa e UFRJ.",
+    "image": "https://images.pexels.com/photos/48604/pexels-photo-48604.jpeg",
+    "credit": "Pexels",
+    "tags": ["SUS", "Anvisa", "Pesquisa Clínica", "Neurologia", "Trauma"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/ministerio-da-saude-e-anvisa-anunciam-aprovacao-de-estudo-clinico-para-tratamento-inovador-de-lesoes-na-medula-espinhal"
+  },
+  {
+    "id": "ms-2026-01-dengue-botucatu",
+    "source": "Ministério da Saúde (Brasil)",
+    "title": "Vacina inédita e 100% brasileira contra a dengue começa a ser aplicada em Botucatu (SP)",
+    "desc": "Notícia sobre início de aplicação de vacina brasileira contra dengue em Botucatu (SP), com orientações e contexto de estratégia pública.",
+    "image": "https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg",
+    "credit": "Pexels",
+    "tags": ["Vacinação", "Dengue", "Saúde Pública", "SUS"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/vacina-inedita-e-100-brasileira-contra-a-dengue-comeca-a-ser-aplicada-em-botucatu-sp"
+  },
+  {
+    "id": "ms-2026-01-pac-maternidades",
+    "source": "Ministério da Saúde (Brasil)",
+    "title": "Ministério da Saúde anuncia construção de maternidades e policlínicas com R$ 499 milhões do Novo PAC",
+    "desc": "Anúncio de investimentos do Novo PAC para ampliar infraestrutura assistencial (maternidades e policlínicas) em estados beneficiados.",
+    "image": "https://images.pexels.com/photos/48604/pexels-photo-48604.jpeg",
+    "credit": "Pexels",
+    "tags": ["Infraestrutura", "Atenção à Saúde", "Gestão", "SUS"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/ministerio-da-saude-anuncia-construcao-de-maternidades-e-policlinicas-com-r-499-milhoes-do-novo-pac-seis-estados-serao-beneficiados"
+  },
+  {
+    "id": "ms-2026-01-hapvida-sus",
+    "source": "Ministério da Saúde (Brasil)",
+    "title": "Hapvida amplia atendimentos gratuitos para pacientes do SUS com mais de 3,7 mil cirurgias e procedimentos",
+    "desc": "Nota sobre ampliação de atendimentos e procedimentos em parceria com o SUS, com números e descrição de ações.",
+    "image": "https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg",
+    "credit": "Pexels",
+    "tags": ["SUS", "Cirurgia", "Assistência", "Gestão"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/operadora-de-plano-de-saude-hapvida-amplia-atendimentos-gratuitos-para-pacientes-do-sus-com-mais-de-3-7-mil-cirurgias-e-procedimentos"
+  },
+  {
+    "id": "ms-2026-01-mais-medicos-bonus",
+    "source": "Ministério da Saúde (Brasil)",
+    "title": "Governo federal inicia pagamento de bônus permanência aos profissionais do Mais Médicos",
+    "desc": "Pagamento de bônus de permanência para profissionais do programa Mais Médicos após 48 meses em áreas vulneráveis; regras e valores citados na matéria.",
+    "image": "https://images.pexels.com/photos/48604/pexels-photo-48604.jpeg",
+    "credit": "Pexels",
+    "tags": ["Mais Médicos", "Gestão", "Atenção Primária", "SUS"],
+    "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/governo-federal-inicia-pagamento-de-bonus-permanencia-aos-profissionais-do-mais-medicos"
+  },
+  {
+    "id": "nih-2026-01-07-neuropathy-mito",
+    "source": "NIH (EUA)",
+    "title": "Transferência de mitocôndrias pode proteger nervos em neuropatia diabética ou induzida por quimioterapia",
+    "desc": "NIH descreve achados sobre transferência de mitocôndrias de células gliais para neurônios e possível impacto em neuropatias.",
+    "image": "https://www.nih.gov/sites/default/files/styles/featured_media_breakpoint-large/public/news-events/news-releases/nih-logo-social-share.jpg",
+    "credit": "NIH",
+    "tags": ["Neurologia", "Diabetes", "Oncologia", "Dor", "Pesquisa"],
+    "url": "https://www.nih.gov/news-events/news-releases/fresh-energy-supply-may-shield-nerves-diabetic-or-chemo-induced-neuropathy"
+  },
+  {
+    "id": "nih-2026-01-06-minimally-invasive-cabg",
+    "source": "NIH (EUA)",
+    "title": "Pesquisadores realizam o primeiro bypass coronariano minimamente invasivo",
+    "desc": "NIH destaca técnica de revascularização coronariana minimamente invasiva, potencialmente relevante para pacientes de alto risco.",
+    "image": "https://www.nih.gov/sites/default/files/styles/featured_media_breakpoint-large/public/news-events/news-releases/nih-logo-social-share.jpg",
+    "credit": "NIH",
+    "tags": ["Cardiologia", "Cirurgia", "Inovação", "Pesquisa"],
+    "url": "https://www.nih.gov/news-events/news-releases/researchers-achieve-first-minimally-invasive-coronary-artery-bypass"
+  },
+  {
+    "id": "fda-2026-01-12-menkes",
+    "source": "FDA (EUA)",
+    "title": "FDA aprova o primeiro tratamento para crianças com Doença de Menkes",
+    "desc": "Anúncio de aprovação do Zycubo (copper histidinate) como primeiro tratamento aprovado para doença rara pediátrica (Menkes).",
+    "image": "https://www.fda.gov/themes/custom/uswds/images/og_image.png",
+    "credit": "FDA",
+    "tags": ["Pediatria", "Doenças Raras", "Farmacologia", "Regulação"],
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-children-menkes-disease"
+  },
+  {
+    "id": "fda-2026-01-cell-gene-flex",
+    "source": "FDA (EUA)",
+    "title": "FDA aumenta flexibilidade em requisitos para terapias celulares e gênicas visando acelerar inovação",
+    "desc": "Comunicado do FDA sobre mudanças/flexibilizações em requisitos para apoiar desenvolvimento e inovação em terapias avançadas.",
+    "image": "https://www.fda.gov/themes/custom/uswds/images/og_image.png",
+    "credit": "FDA",
+    "tags": ["Terapia Gênica", "Terapia Celular", "Regulação", "Inovação"],
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-increases-flexibility-requirements-cell-and-gene-therapies-advance-innovation"
+  },
+  {
+    "id": "cdc-2026-01-05-immunization-schedule",
+    "source": "CDC (EUA)",
+    "title": "CDC anuncia ação para atualizar o calendário de imunização infantil após memorando presidencial",
+    "desc": "Release do CDC sobre atualização do calendário vacinal infantil, citando avaliação científica e diretrizes federais.",
+    "image": "https://www.cdc.gov/media/images/cdc-social-share.jpg",
+    "credit": "CDC",
+    "tags": ["Vacinação", "Pediatria", "Saúde Pública", "Diretrizes"],
+    "url": "https://www.cdc.gov/media/releases/2026/2026-cdc-acts-on-presidential-memorandum-to-update-childhood-immunization-schedule.html"
+  }
+]
+
