@@ -1,0 +1,6 @@
+{
+  "appId": "com.evokale.news",
+  "appName": "Evokale News",
+  "webDir": ".",
+  "server": { "androidScheme": "https" }
+}
