@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Evokale News</string>
+    <string name="title_activity_main">Evokale News</string>
+    <string name="package_name">com.evokale.news</string>
+    <string name="custom_url_scheme">com.evokale.news</string>
+</resources>
